@@ -105,28 +105,6 @@ frontend/
 
 ---
 
-## 🗄️ MongoDB Screenshots (To Add)
-Please attach screenshots of:
-- User collection  
-- Subscription collection  
-- StockHistory collection  
-- Any other collection  
-
----
-
-## 🧪 Backend Health Check (POSTMAN Screenshot Needed)
-Please add screenshot of hitting:
-```
-GET /health
-```
-It shows:
-- Backend is running  
-- Database connected  
-- Stock API working  
-- Socket connected  
-
----
-
 ## 🚀 Setup
 
 ### Backend
@@ -154,9 +132,18 @@ npm start
 
 ---
 
+## 🔗 External Services
+- **Alpha Vantage API (Stock Prices):**  
+  https://www.alphavantage.co/support/#api-key  
+
+- **Brevo (Sendinblue) Email Service (OTP):**  
+  https://www.brevo.com  
+
+---
+
 ## 🙏 Support
 Email: **sagarshegunasi2664@gmail.com**
 
-Made with ❤️ by Sagar
+Made with ❤️ by Sagar  
 
 Last Updated: December 2024
