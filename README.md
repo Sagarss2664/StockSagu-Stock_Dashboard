@@ -240,6 +240,22 @@ npm start
 
 ---
 
+## 🧪 API Testing (Postman)
+
+The backend APIs were tested using **Postman** to ensure correctness, availability, and data consistency.
+
+### ✅ GET Requests Tested
+
+<div align="center">
+
+<img src="health_check.png" alt="Health Check API" width="45%" />
+<img src="supported_stocks.png" alt="Supported Stocks API" width="45%" />
+
+</div>
+
+---
+
+---
 ## 🔗 External Services
 - **Alpha Vantage API (Stock Prices):**  
   https://www.alphavantage.co/support/#api-key  
