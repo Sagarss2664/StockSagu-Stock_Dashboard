@@ -1,49 +1,157 @@
-# 📈 StockSagu - Real-Time Stock Dashboard
+# 📈 StockSagu – Real-Time Stock Dashboard
 
-A clean and simple stock dashboard that shows **real stock prices** using the **Alpha Vantage API**, and verifies users with **Brevo email OTP**.
+StockSagu is a **real-time stock monitoring web application** that allows users to securely log in using email OTP, subscribe to selected stocks, and view **live price updates with advanced charts**.  
+The system is designed with a **clean architecture**, real-time data flow, and scalable backend services.
 
 ---
 
 ## 🌟 Live Demo
-**Frontend:** https://stocksagu-stock-dashboard-1.onrender.com  
-**Backend API:** https://stocksagu-stock-dashboard.onrender.com  
+
+- **Frontend:** https://stocksagu-stock-dashboard-1.onrender.com  
+- **Backend API:** https://stocksagu-stock-dashboard.onrender.com  
 
 ---
 
-## 🔐 Authentication
-- Login using **email OTP**  
-- OTP sent using **Brevo Email Service**  
-- OTP expires in **10 minutes**  
-- Simple token session system  
+## 🔐 Authentication & Security
+
+- Email-based **OTP authentication**
+- OTP delivery via **Brevo (Sendinblue) Email Service**
+- OTP expires in **10 minutes**
+- Token-based session management
+- Simple and secure login flow (no passwords stored)
 
 ---
 
-## 📈 Real-Time Stock Updates
-- Fetches **real stock values** from Alpha Vantage  
-- Supports stocks: **GOOG, TSLA, AMZN, META, NVDA**  
-- Auto-updates every **15 seconds**  
-- Saves last **24 hours** of price history  
+## 📈 Real-Time Stock Features
+
+- Fetches **real stock prices** from **Alpha Vantage API**
+- Supported stocks:
+  - `GOOG`
+  - `TSLA`
+  - `AMZN`
+  - `META`
+  - `NVDA`
+- Automatic price refresh every **15 seconds**
+- Stores **last 24 hours** of historical price data
+- WebSocket-based live updates (no page refresh)
 
 ---
 
-## 📊 Charts
-- Candlestick charts  
-- Real-time price markers  
-- Indicators: **SMA, RSI, MACD, Bollinger Bands**  
+## 📊 Advanced Charting
+
+- Candlestick charts
+- Live price markers
+- Technical indicators:
+  - SMA (Simple Moving Average)
+  - RSI (Relative Strength Index)
+  - MACD
+  - Bollinger Bands
+- Smooth zoom and pan interactions
 
 ---
 
 ## 💼 Portfolio & Subscriptions
-- Subscribe to favourite stocks  
-- Live update feed  
-- Simple and clean watchlist  
+
+- Subscribe to favorite stocks
+- Personalized watchlist per user
+- Real-time updates only for subscribed stocks
+- Clean and minimal portfolio view
 
 ---
 
-## 🖥️ Simple UI
-- Modern dark theme  
-- Works on phone, tablet, and desktop  
-- Smooth charts and clean buttons  
+## 🖥️ User Interface
+
+- Modern **dark theme**
+- Responsive design (mobile, tablet, desktop)
+- Clean layout with smooth interactions
+- Optimized for performance and readability
+
+---
+
+## 🧱 System Architecture Overview
+
+- **Frontend:** React.js  
+- **Backend:** Node.js + Express.js  
+- **Database:** MongoDB  
+- **Real-Time:** WebSockets  
+- **External APIs:** Alpha Vantage, Brevo  
+
+The system follows a **modular architecture**, separating authentication, subscriptions, stock data handling, and real-time services.
+
+---
+
+## 🗂️ Entity Relationship (ER) Diagram
+
+![ER Diagram](https://github.com/Sagarss2664/StockSagu-Stock_Dashboard/blob/190ed9aa6743500554b51ecb9196224a04949955/ER%20Daigram.png)
+
+### 📌 ER Diagram Explanation
+
+The database is designed using a **normalized and scalable schema** with three main entities:
+
+#### 1. **Users**
+- Stores registered user information
+- Each user is uniquely identified by `id`
+- A user can subscribe to **multiple stocks**
+
+**Key Attributes:**
+- `id` (Primary Key)
+- `email`
+- `createdAt`
+
+---
+
+#### 2. **Subscriptions**
+- Acts as a **bridge** between Users and Stocks
+- Represents which stock symbols a user is subscribed to
+- Enables a **One-to-Many** relationship from Users to Subscriptions
+
+**Key Attributes:**
+- `id` (Primary Key)
+- `userId` (Foreign Key → Users.id)
+- `symbol`
+- `subscribedAt`
+
+---
+
+#### 3. **StockHistories**
+- Stores real-time and historical stock price data
+- Maintains **time-series data** for each stock symbol
+- Used for charts, indicators, and historical analysis
+
+**Key Attributes:**
+- `id` (Primary Key)
+- `symbol`
+- `timestamp`
+- `price`
+- `open`
+- `close`
+- `high`
+- `low`
+- `volume`
+- `priceChange` (derived)
+
+---
+
+### 🔗 Relationships Summary
+
+- **User → Subscriptions:** One-to-Many  
+- **Subscription → StockHistories:** One-to-Many  
+- Stock symbol is treated as an **attribute**, not a separate entity (intentional design choice)
+
+---
+## 🗄️ MongoDB Collections Overview
+
+The application stores data across three MongoDB collections:
+
+### 📊 Database Snapshots
+
+<div align="center">
+
+<img src="screenshots/users.png" alt="Users Collection" width="30%" />
+<img src="screenshots/stock_histories.png" alt="StockHistories Collection" width="30%" />
+<img src="screenshots/subscriptions.png" alt="Subscriptions Collection" width="30%" />
+
+</div>
 
 ---
 
