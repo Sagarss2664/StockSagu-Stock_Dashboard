@@ -249,7 +249,7 @@ The backend APIs were tested using **Postman** to ensure correctness, availabili
 <div align="center">
 
 <img src="healthCheking.png" alt="Health Check API" width="45%" />
-<img src="supported_stocks.png" alt="Supported Stocks API" width="45%" />
+<img src="SupportedStocks.png" alt="Supported Stocks API" width="45%" />
 
 </div>
 
