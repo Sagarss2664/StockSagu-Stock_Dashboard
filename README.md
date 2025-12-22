@@ -147,9 +147,9 @@ The application stores data across three MongoDB collections:
 
 <div align="center">
 
-<img src="screenshots/users.png" alt="Users Collection" width="30%" />
-<img src="screenshots/stock_histories.png" alt="StockHistories Collection" width="30%" />
-<img src="screenshots/subscriptions.png" alt="Subscriptions Collection" width="30%" />
+<img src="users.png" alt="Users Collection" width="30%" />
+<img src="stockhistories.png" alt="StockHistories Collection" width="30%" />
+<img src="subscriptions.png" alt="Subscriptions Collection" width="30%" />
 
 </div>
 
