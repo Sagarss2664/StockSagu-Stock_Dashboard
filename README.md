@@ -1,6 +1,6 @@
 # 📈 StockSagu – Real-Time Stock Dashboard
 
-StockSagu is a **real-time stock monitoring web application** that allows users to securely log in using email OTP, subscribe to selected stocks, and view **live price updates with advanced charts**.  
+StockSagu is a **real-time stock monitoring web application** that allows users to securely log in using email OTP, subscribe to selected stocks, and view **live price updates**.  
 The system is designed with a **clean architecture**, real-time data flow, and scalable backend services.
 
 ---
@@ -37,19 +37,6 @@ The system is designed with a **clean architecture**, real-time data flow, and s
 
 ---
 
-## 📊 Advanced Charting
-
-- Candlestick charts
-- Live price markers
-- Technical indicators:
-  - SMA (Simple Moving Average)
-  - RSI (Relative Strength Index)
-  - MACD
-  - Bollinger Bands
-- Smooth zoom and pan interactions
-
----
-
 ## 💼 Portfolio & Subscriptions
 
 - Subscribe to favorite stocks
@@ -62,7 +49,6 @@ The system is designed with a **clean architecture**, real-time data flow, and s
 ## 🖥️ User Interface
 
 - Modern **dark theme**
-- Responsive design (mobile, tablet, desktop)
 - Clean layout with smooth interactions
 - Optimized for performance and readability
 
