@@ -1,0 +1,23 @@
+{
+  "name": "stocksagu-stock_dashboard",
+  "version": "1.0.0",
+  "description": "StockSagu is a **real-time stock monitoring web application** that allows users to securely log in using email OTP, subscribe to selected stocks, and view **live price updates with advanced charts**.  \r The system is designed with a **clean architecture**, real-time data flow, and scalable backend services.",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sagarss2664/StockSagu-Stock_Dashboard.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Sagarss2664/StockSagu-Stock_Dashboard/issues"
+  },
+  "homepage": "https://github.com/Sagarss2664/StockSagu-Stock_Dashboard#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^25.0.3"
+  }
+}
