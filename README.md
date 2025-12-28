@@ -65,6 +65,21 @@ The system is designed with a **clean architecture**, real-time data flow, and s
 The system follows a **modular architecture**, separating authentication, subscriptions, stock data handling, and real-time services.
 
 ---
+## 🔄 UML Sequence Diagram
+
+The following UML Sequence Diagram represents the **complete runtime flow** of the StockSagu system, covering:
+
+- Email-based OTP authentication using Brevo
+- OTP verification and token generation
+- Periodic stock price fetching from Alpha Vantage
+- Storage of historical stock data in MongoDB
+- WebSocket-based real-time stock price broadcasting
+- Live dashboard updates for subscribed users without page refresh
+
+![UML Sequence Diagram – Authentication & Real-Time Updates](sequence-diagram.png)
+
+---
+
 
 ## 🗂️ Entity Relationship (ER) Diagram
 
