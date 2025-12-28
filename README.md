@@ -76,7 +76,7 @@ The following UML Sequence Diagram represents the **complete runtime flow** of t
 - WebSocket-based real-time stock price broadcasting
 - Live dashboard updates for subscribed users without page refresh
 
-![UML Sequence Diagram – Authentication & Real-Time Updates]([sequence-diagram.png](https://github.com/Sagarss2664/StockSagu-Stock_Dashboard/blob/1e66ba4e88e1dcaa5eb8ec1830e09afe3dc7a180/sequence_daigram.png))
+![UML Sequence Diagram – Authentication & Real-Time Updates](sequence-diagram.png)
 
 ---
 
